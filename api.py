@@ -107,4 +107,4 @@ def media_get(id):
 
 #  main thread of execution to start the server
 if __name__=='__main__':
-   app.run(debug=config.debug)
+   app.run(debug=config.debug, host="0.0.0.0", port=5001)
