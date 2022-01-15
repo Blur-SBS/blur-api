@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  blurapi:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./blursbs_config.py:/app/blursbs_config.py
+      
