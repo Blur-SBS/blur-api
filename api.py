@@ -84,7 +84,7 @@ def media_upload():
                                     }
                             }
                     }
-            response = call_webhook("https://blur.sbs/celery.php", data)
+            response = call_webhook(config.webhook_url, data)
             with closing(get_connection) as connection:
                 return get_media_result(connection, response["id"], response["email"])
         else:
