@@ -9,7 +9,7 @@ import requests
 import json
 UPLOAD_FOLDER = '/data/uploads'
 ALLOWED_EXTENSIONS = {'mp4', 'png', 'jpg', 'jpeg'}
-
+ 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
